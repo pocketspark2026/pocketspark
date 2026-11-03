@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17392e">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'none'; style-src 'self'; img-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="A free-first guide comparing offline access, portable notes, and setup work in Obsidian, Joplin, and Notion.">
+  <meta property="og:title" content="Where should your study notes live? · Study Desk Choices">
+  <meta property="og:description" content="A free-first guide to offline access, portable notes and the setup work behind each choice.">
+  <title>Where should your study notes live? · Study Desk Choices</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header><div class="wrap">
+    <div class="brand">Study Desk Choices</div>
+    <div class="status"><i></i>Independent guide · no affiliate links</div>
+    <h1>Where should your study notes live?</h1>
+    <p class="lede">A free-first guide to offline access, portable notes and the setup work behind each choice.</p>
+    <div class="byline">Source check: 3 November 2026 · Vendor documentation + public community discussions · Anecdotal feedback sample · No hands-on testing</div>
+  </div></header>
+  <main class="wrap">
+    <div class="notice"><strong>Disclosure</strong>This guide has no affiliate links, sponsorship or paid placement. Product details are drawn from official documentation. Community posts are anecdotal, not a representative survey. No tool was personally tested.</div>
+    <p class="intro">Start with the problem you have. Obsidian stores notes as local Markdown files; Joplin keeps an offline copy of notes on your devices. Notion is cloud-based and lets you download individual pages for offline use in its desktop and mobile apps. None is the right choice for everyone.</p>
+
+    <section class="grid" aria-label="Note app comparison">
+      <article class="card"><div class="eyebrow">Local files</div><h2>Obsidian</h2><p>Notes are Markdown text files inside a folder called a vault on your device. You can use the app without signing up.</p><h3>A reasonable fit</h3><ul><li>You want local files and linked notes.</li><li>You are comfortable managing your own backup and sync method.</li></ul><h3>Trade-off</h3><p>Multi-device syncing is a separate setup or optional paid service. A local folder alone is not a backup.</p></article>
+      <article class="card"><div class="eyebrow">Offline-first</div><h2>Joplin</h2><p>The app describes itself as offline-first: notes stay on your phone or computer and remain available without internet. Notes use Markdown.</p><h3>A reasonable fit</h3><ul><li>You want offline notes in notebooks with tags.</li><li>You can choose a sync destination if you use multiple devices.</li></ul><h3>Trade-off</h3><p>Sync and backup behavior depend on the destination and settings you choose. Check them before relying on sync.</p></article>
+      <article class="card"><div class="eyebrow">Structured workspace</div><h2>Notion</h2><p>Cloud-based workspace. All plans can download individual pages for offline use in the desktop or mobile app; paid plans also automatically download recently visited and favorited pages. Offline use is not available in a web browser.</p><h3>A reasonable fit</h3><ul><li>You already organize classes with pages, tasks or databases.</li><li>You can download the pages you need before travel.</li></ul><h3>Trade-off</h3><p>Download individual pages you need. Paid plans also auto-download recently visited and favorited pages. Export a small sample and inspect it before moving a large archive.</p></article>
+    </section>
+
+    <h2>Compare the workflow</h2>
+    <div class="table-wrap"><table class="table"><thead><tr><th>Question</th><th>Obsidian</th><th>Joplin</th><th>Notion</th></tr></thead><tbody>
+      <tr><td>Where notes live</td><td>Markdown files in a local vault folder</td><td>Markdown notes stored locally on your devices</td><td>Cloud workspace; selected pages can be downloaded in the apps</td></tr>
+      <tr><td>Offline access</td><td>Local vault is on the device</td><td>Offline-first workflow</td><td>Download pages in the apps; paid plans also auto-download recent/favorite pages</td></tr>
+      <tr><td>Getting notes back</td><td>Copy the plain-text files from your vault</td><td>Markdown and full JEX export options</td><td>Workspace export to Markdown, HTML or CSV for databases</td></tr>
+      <tr><td>Setup you manage</td><td>Backups, sync and vault organization</td><td>Backup and optional sync destination</td><td>Downloading offline pages and testing exports</td></tr>
+    </tbody></table></div>
+
+    <h2>Choose by the problem you have</h2>
+    <div class="fit">
+      <div><strong>Want ordinary files?</strong>Try one Obsidian vault, then test a backup and open a copied note outside the app.</div>
+      <div><strong>Need offline-first notes?</strong>Try Joplin on one device first, then choose a sync method only if needed.</div>
+      <div><strong>Already use Notion?</strong>Keep the pages-and-database workflow, and download the pages you need in its app before going offline.</div>
+    </div>
+
+    <section class="panel"><h2>What public user discussions highlight</h2><p class="small">This is a small, anecdotal scan, not a survey, product rating or defect-rate estimate. The examples point to things worth testing in your own setup.</p><ul>
+      <li><strong>Obsidian:</strong> A recent cross-device discussion raised the effort of syncing between Linux and iOS, large audio/video attachments and avoiding another subscription. Replies showed different setups and preferences. Test your device mix and largest attachment before committing to a sync method. <a href="https://www.reddit.com/r/ObsidianMD/comments/1upfxcy/how_are_you_sharing_your_vault_between_devices/" rel="noopener">Read the public discussion</a>.</li>
+      <li><strong>Joplin:</strong> One traveler described conflict files during intermittent connectivity, then later said the issue had not recurred. In a separate iOS support thread, a user reported that changing attachment-download settings helped missing files, while sync behavior was still being checked. Test one note, one attachment and your real connection pattern. <a href="https://discourse.joplinapp.org/t/managing-intermittent-data-connections/50007" rel="noopener">Intermittent connection discussion</a> · <a href="https://discourse.joplinapp.org/t/joplin-mobile-ios-seems-unable-to-sync-correctly/50565/5" rel="noopener">Attachment sync discussion</a>.</li>
+      <li><strong>Notion:</strong> Community comments welcomed offline access but asked for easier coverage of subpages and large databases. The current help page says subpages must be downloaded individually and database offline access is limited to the first 50 rows of the first view. Try your actual page tree and database before relying on them offline. <a href="https://www.reddit.com/r/Notion/comments/1murd6n" rel="noopener">Read the public discussion</a>.</li>
+    </ul></section>
+
+    <section class="panel"><h2>Run a one-week, no-cost trial</h2><ol class="steps">
+      <li>Pick one non-sensitive course or project. Do not import a full archive yet.</li>
+      <li>Add two short sample notes and one small attachment. If you use nested pages or databases, include one of each.</li>
+      <li>For Notion, download the exact pages and subpages you need in its desktop or mobile app, then test in airplane mode. If a database matters, check the rows you need; the first 50 rows of the first view are the current offline limit.</li>
+      <li>If you need more than one device, create or edit a test note offline on each device, reconnect, and check for conflicts, duplicates and missing attachments. For Obsidian, include your largest typical attachment; for Joplin, verify the chosen sync destination and attachment settings.</li>
+      <li>Export or copy one note, reopen it outside the app, and check whether its attachment came along.</li>
+      <li>Make a separate backup before moving real notes. Check school or employer rules before storing protected material in a personal service.</li>
+    </ol><p class="small">A free app does not mean every sync, storage or publishing feature is free. Check current vendor terms before paying.</p></section>
+
+    <footer><strong>Sources</strong><ul>
+      <li><a href="https://obsidian.md/help/data-storage" rel="noopener">Obsidian: How data is stored</a> · <a href="https://obsidian.md/pricing.html" rel="noopener">Obsidian pricing</a></li>
+      <li><a href="https://joplinapp.org/help/" rel="noopener">Joplin: What is Joplin?</a> · <a href="https://joplinapp.org/help/apps/import_export/" rel="noopener">Joplin import/export</a></li>
+      <li><a href="https://www.notion.com/en-gb/help/use-pages-offline" rel="noopener">Notion: Use pages offline</a> · <a href="https://www.notion.com/help/back-up-your-data" rel="noopener">Notion: Back up your data</a></li>
+    </ul><strong>Public community discussions (anecdotal)</strong><ul>
+      <li><a href="https://www.reddit.com/r/ObsidianMD/comments/1upfxcy/how_are_you_sharing_your_vault_between_devices/" rel="noopener">Obsidian: Sharing a vault between devices</a></li>
+      <li><a href="https://discourse.joplinapp.org/t/managing-intermittent-data-connections/50007" rel="noopener">Joplin: Managing intermittent data connections</a> · <a href="https://discourse.joplinapp.org/t/joplin-mobile-ios-seems-unable-to-sync-correctly/50565/5" rel="noopener">Joplin: iOS attachment sync support thread</a></li>
+      <li><a href="https://www.reddit.com/r/Notion/comments/1murd6n" rel="noopener">Notion: Offline mode community discussion</a></li>
+    </ul><p class="small">Study Desk Choices has not tested these tools. Community posts are anecdotal and not representative ratings or verified defect rates. No referral links, commissions, testimonials or paid placements are included. Review the current documentation before choosing or paying for a service.</p><p class="small">Privacy: This guide uses no analytics, contact forms or ad tracking. Its hosting provider may process technical connection data under that provider's privacy policy.</p>    <p class="small">Corrections: <a href="https://github.com/pocketspark2026/pocketspark/issues/new?title=Study%20Desk%20Choices%20correction" target="_blank" rel="noopener noreferrer">Report a factual correction</a>. This opens a public issue; do not include private or financial information.</p>
+    </footer>
+  </main>
+</body>
+</html>
